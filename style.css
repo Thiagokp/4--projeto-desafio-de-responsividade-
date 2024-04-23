@@ -1,0 +1,146 @@
+/* Define estilos para todos os elementos na página */
+*{
+    margin: 0; /* Remove margem */
+    padding: 0; /* Remove preenchimento */
+    box-sizing: border-box; /* Usa a caixa de modelo de borda */
+    font-family: "Oswald", sans-serif; /* Define a fonte padrão */
+    font-weight: 400; /* Define o peso da fonte */
+}
+
+/* Define estilos para o contêiner principal */
+.container{
+    width: 100vw; /* Largura total da viewport */
+    height: 100vw; /* Altura total da viewport */
+}
+
+/* Define estilos para a parte esquerda do contêiner */
+.container-left{
+    display: inline-block; /* Exibe como bloco que respeita a linha */
+    width: 60%; /* Largura de 60% do contêiner */
+    margin-top: 15%; /* Margem superior de 15% do contêiner */
+    padding-left: 136px; /* Preenchimento à esquerda de 136 pixels */
+}
+
+/* Define estilos para a parte direita do contêiner */
+.container-right{
+    display: inline-block; /* Exibe como bloco que respeita a linha */
+    background: rgba(93, 93, 125, 0.16); /* Cor de fundo com transparência */
+    height: 100vw; /* Altura total da viewport */
+    width: 40%; /* Largura de 40% do contêiner */
+    position: absolute; /* Posicionamento absoluto */
+}
+
+/* Define estilos para cabeçalhos */
+h1{
+    font-size: 70px; /* Tamanho da fonte */
+    color:#5D5D7D; /* Cor do texto */
+    width: 368px; /* Largura fixa */
+}
+
+/* Define estilos para parágrafos */
+p{
+    font-size: 28px; /* Tamanho da fonte */
+    line-height: 48px; /* Altura da linha */
+    opacity: 0.6; /* Opacidade */
+    margin: 15px 0px; /* Margem superior e inferior de 15px */
+    width: 540px; /* Largura fixa */
+}
+
+/* Define estilos para botões */
+button{
+    width: 269px; /* Largura */
+    height: 62px; /* Altura */
+    background: #9499EA; /* Cor de fundo */
+    border-radius: 20.5px; /* Raio da borda */
+    border: none; /* Sem borda */
+    font-size: 24px; /* Tamanho da fonte */
+    line-height: 36px; /* Altura da linha */
+    text-align: center; /* Alinhamento de texto */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* Cursor */
+}
+
+/* Efeitos de hover para botões */
+button:hover{
+    opacity: .8; /* Opacidade ao passar o mouse */
+}
+
+/* Efeitos de clique para botões */
+button:active{
+    opacity: .5; /* Opacidade ao clicar */
+}
+
+/* Estilos para imagens */
+img{    
+    position: relative; /* Posicionamento relativo */
+    top: 15%; /* Distância do topo */
+    right: 130px; /* Distância da direita */
+}
+
+/* Estilos para cabeçalho */
+header{
+    margin: 24px 0 0 57px; /* Margem */
+}
+
+/* Estilos para links */
+a{
+    font-size: 28px; /* Tamanho da fonte */
+    line-height: 50px; /* Altura da linha */
+    margin-right: 40px; /* Margem à direita */
+    color: rgba(93, 93, 125, 1); /* Cor do texto */
+    cursor: pointer; /* Cursor */
+}
+
+/* Estilos para o segundo link */
+a:nth-child(2){
+    opacity: .4; /* Opacidade */
+}
+
+/* Efeito de clique para links */
+a:active{
+    opacity: .8; /* Opacidade ao clicar */
+}
+
+/* Estilos para telas menores que 900px */
+@media screen and (max-width:900px) {
+    /* Estilos aplicados quando a largura da tela é 900px ou menos */
+    .container-left{
+        width: 100%; /* Largura total do contêiner */
+        height: 50%; /* Altura de 50% do contêiner */
+        padding: 0; /* Remove preenchimento */
+        margin: 0; /* Remove margem */
+    }
+    .container-right{
+        display: block; /* Exibe como bloco */
+        height: auto; /* Altura automática */
+        width: 100%; /* Largura total */
+        position: absolute; /* Posicionamento absoluto */
+        padding: 40px; /* Preenchimento */
+    }
+    img{
+        position: static; /* Posicionamento estático */
+        max-width: 90%; /* Largura máxima */
+    }
+    header{
+        display: none; /* Esconde o cabeçalho */
+    }
+    h1{
+        font-size: 36px; /* Tamanho da fonte */
+        line-height: 52px; /* Altura da linha */
+        width: auto; /* Largura automática */
+        margin: 58px 50px 0px 50px; /* Margem */
+        text-align: center; /* Alinhamento de texto */
+    }
+    p{
+        margin: 15px 40px; /* Margem */
+        width: auto; /* Largura automática */
+        text-align: center; /* Alinhamento de texto */
+        font-family: Oswald; /* Fonte */
+        font-size: 14px; /* Tamanho da fonte */
+        line-height: 24px; /* Altura da linha */
+    }
+    button{
+        display: block; /* Exibe como bloco */
+        margin: 0 auto; /* Margem automática */
+    }
+}
